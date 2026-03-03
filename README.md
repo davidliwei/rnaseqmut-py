@@ -4,6 +4,8 @@
 > Python implementation of the original C++ `rnaseqmut` workflow.
 > Core caller: `bin/rnaseqmut` (Python 3 + pysam).
 > Demo runner: `demo/rundemo.py`.
+>
+> Original C++ project: https://github.com/davidliwei/rnaseqmut
 
 ## Quick start
 
