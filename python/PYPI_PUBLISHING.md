@@ -28,6 +28,14 @@ Use `__token__` as username and your PyPI token as password.
 
 ## 4) Upload via GitHub Actions (recommended)
 
+### TestPyPI first
+
+- Workflow: `.github/workflows/testpypi-publish.yml`
+- Trigger: manual run (`workflow_dispatch`) from GitHub Actions.
+- It builds from `python/` and uploads to TestPyPI.
+
+### Then publish to production PyPI
+
 - Workflow: `.github/workflows/pypi-publish.yml`
 - Trigger by publishing a GitHub Release.
 - The workflow builds from `python/` and uploads to PyPI.
