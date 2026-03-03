@@ -1,2 +1,0 @@
-#chrom	pos	ref	alt	NORMAL1.reff	NORMAL1.refv	NORMAL1.altf	NORMAL1.altv	NORMAL2.reff	NORMAL2.refv	NORMAL2.altf	NORMAL2.altv	TUMOR1.reff	TUMOR1.refv	TUMOR1.altf	TUMOR1.altv	TUMOR2.reff	TUMOR2.refv	TUMOR2.altf	TUMOR2.altv
-chr12	25398284	C	G	2	11	0	0	1	7	0	0	3	5	4	3	7	26	31	117

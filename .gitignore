@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual envs
+.venv/
+venv/
+
+# Demo generated outputs
+demo/results/*.txt
+demo/results/*.vcf

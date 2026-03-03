@@ -1,9 +1,36 @@
 
 # rnaseqmut-py: detecting mutations in RNA-Seq samples (Python port)
 
-> This repository is a Python implementation of the original C++ `rnaseqmut` workflow.
+> Python implementation of the original C++ `rnaseqmut` workflow.
 > Core caller: `bin/rnaseqmut` (Python 3 + pysam).
-> Python demo: `demo/rundemo.py`.
+> Demo runner: `demo/rundemo.py`.
+
+## Quick start
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 demo/rundemo.py
+```
+
+## Core usage
+
+```bash
+python3 bin/rnaseqmut demo/data/TUMOR1.bam > out.txt
+```
+
+With a provided mutation list:
+
+```bash
+python3 bin/rnaseqmut -l demo/results/ALLMUTLIST.txt demo/data/TUMOR1.bam > out.2nd.txt
+```
+
+## Test status
+
+The end-to-end demo (`demo/rundemo.py`) was executed successfully in this port and produces:
+
+- `demo/results/ALLMUTLIST.txt`
+- `demo/results/ALLMUT.txt`
+- `demo/results/ALLMUT_FILTERED.vcf`
 
 
 ## Author: Wei Li 
