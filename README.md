@@ -6,6 +6,8 @@
 > Demo runner: `demo/rundemo.py`.
 >
 > Original C++ project: https://github.com/davidliwei/rnaseqmut
+>
+> This repository now includes a Python-only implementation and packaging path, so end users do not need any C++ compiler to run `rnaseqmut-py`.
 
 ## Quick start
 
@@ -13,6 +15,17 @@
 python3 -m pip install -r requirements.txt
 python3 demo/rundemo.py
 ```
+
+## Python-only package layout (PyPI-ready)
+
+All Python package code and PyPI build metadata now live in:
+
+- `python/rnaseqmut_py/` (pure Python implementation)
+- `python/pyproject.toml` (packaging metadata)
+- `python/README_PYPI.md` (PyPI long description)
+- `.github/workflows/python-package.yml` (CI + demo smoke)
+- `.github/workflows/pypi-publish.yml` (trusted publishing workflow)
+- `python/PYPI_PUBLISHING.md` (step-by-step upload instructions)
 
 ## Core usage
 
